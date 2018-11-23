@@ -1,6 +1,8 @@
 <?php
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', 'root');
-define('DB_NAME', 'simplicity');
-define('ROOT', $_SERVER['DOCUMENT_ROOT']);
+$host       = "localhost";
+$username   = "root";
+$password   = "root";
+$dbname     = "crud";
+$dsn        = "mysql:host=$host;dbname=$dbname";
+$options    = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
+$title      = strtoupper($dbname);

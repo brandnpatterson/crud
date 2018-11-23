@@ -1,20 +1,25 @@
 <?php
+
+if (!isset($_SERVER['REDIRECT_URL'])) {
+    $_SERVER['REDIRECT_URL'] = '';
+}
+
 $request = $_SERVER['REDIRECT_URL'];
 
 switch ($request) {
     case '/' :
-        require './src/home.php';
+        require './public/home.php';
         break;
     case '' :
-        require './src/home.php';
+        require './public/home.php';
         break;
     case '/signup' :
-        require './src/signup.php';
+        require './public/signup.php';
         break;
     case '/signin' :
-        require './src/signin.php';
+        require './public/signin.php';
         break;
     default: 
-        require './src/404.php';
+        require './public/404.php';
         break;
 }

@@ -1,6 +1,5 @@
 <?php
 require  './conf/conf.php';
-require './conf/database.php';
-require './src/header.php';
-require './src/index.php';
-require './src/footer.php';
+require './public/header.php';
+require './public/index.php';
+require './public/footer.php';
